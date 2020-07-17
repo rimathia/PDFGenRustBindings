@@ -1,6 +1,6 @@
 PDFGenRustBindings
 =======
-Very incomplete Rust bindings for the very useful [PDFGen](https://github.com/AndreRenaud/PDFGen) (bundling the C code). Just for a hobby project. You almost certainly shouldn't use these bindings, consider for example [printpdf](https://github.com/fschutt/printpdf)) instead.
+Very incomplete Rust bindings for the very useful [PDFGen](https://github.com/AndreRenaud/PDFGen) (bundling the C code). Just for a hobby project. You almost certainly shouldn't use these bindings, consider for example [printpdf](https://github.com/fschutt/printpdf) instead.
 
 License
 =======
