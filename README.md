@@ -1,0 +1,1 @@
+Very incomplete Rust bindings for [PDFGen](https://github.com/AndreRenaud/PDFGen) (bundling the C code). Just for a hobby project. You almost certainly shouldn't use this, use a real library (e.g. [printpdf](https://github.com/fschutt/printpdf)) instead.
