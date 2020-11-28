@@ -1,4 +1,5 @@
 #![feature(const_fn)]
+#![feature(const_fn_floating_point_arithmetic)]
 extern crate libc;
 use libc::{c_char, c_float, c_int, c_uchar, size_t};
 
