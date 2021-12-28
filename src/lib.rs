@@ -1,26 +1,27 @@
-#![feature(const_fn_floating_point_arithmetic)]
 extern crate libc;
 use libc::{c_char, c_float, c_int, c_uchar, size_t};
 
 /// Convert a value in inches into a number of points.
 /// Always returns an integer value
 /// @param inch inches value to convert to points
-pub const fn inch_to_point(inch: f32) -> f32 {
-    return inch * 72.0f32;
+pub fn inch_to_point(inch: f32) -> f32 {
+    inch * 72.0f32
 }
 
 /// Convert a value in milli-meters into a number of points.
 /// Always returns an integer value
 /// @param mm millimeter value to convert to points
-pub const fn mm_to_point(mm: f32) -> f32 {
-    return mm * 72.0f32 / 25.4f32;
+pub fn mm_to_point(mm: f32) -> f32 {
+    mm * 72.0f32 / 25.4f32
 }
 
 /// Point width of a standard A4 page
-pub const A4_WIDTH: f32 = mm_to_point(210.0f32);
+pub fn a4_width_points() ->f32 {
+    mm_to_point(210.0f32)
+}
 
 /// Point height of a standard A4 page
-pub const A4_HEIGHT: f32 = mm_to_point(297.0f32);
+pub fn a4_height_points() -> f32 { mm_to_point(297.0f32)}
 
 /// pdf_info describes the metadata to be inserted into the header of the output PDF
 #[repr(C)]
